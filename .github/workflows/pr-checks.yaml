@@ -29,7 +29,6 @@ jobs:
       - name: Check Lint
         run: |
           npx lerna bootstrap
-          npm run lint --fix
       
       - name: Build Packages
         run: |
