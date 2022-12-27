@@ -140,7 +140,7 @@ export class SmartAccountAPI extends BaseWalletAPI {
       }
     }
 
-    if(!maxFeePerGas || !maxPriorityFeePerGas) {
+    if (!maxFeePerGas || !maxPriorityFeePerGas) {
       const gasFee = await this.provider.getGasPrice() // Could be from bundler/ oracle
       maxFeePerGas = gasFee
       maxPriorityFeePerGas = gasFee
