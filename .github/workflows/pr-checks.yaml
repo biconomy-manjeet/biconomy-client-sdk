@@ -23,8 +23,6 @@ jobs:
         run: |
           npm install lerna -g
           npm install eslint-plugin-prettier@latest --save-dev
-          ./rebuild.sh
-          npx lerna clean -y
 
       - name: Check Lint
         run: |

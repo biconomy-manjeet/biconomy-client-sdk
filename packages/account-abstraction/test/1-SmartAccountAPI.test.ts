@@ -11,7 +11,7 @@ import { anyValue } from '@nomicfoundation/hardhat-chai-matchers/withArgs'
 import { ethers } from 'hardhat'
 import { UserOperation } from '@biconomy/core-types'
 import { SmartAccountAPI } from '../src'
-import { SampleRecipient, SampleRecipient__factory } from '@biconomy/common/dist/src/types'
+import { SampleRecipient, SampleRecipient__factory } from '@biconomy/common/src/types'
 
 import {
   SmartWalletFactoryFactoryContractV101,

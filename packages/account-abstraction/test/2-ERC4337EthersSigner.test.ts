@@ -1,4 +1,4 @@
-import { SampleRecipient, SampleRecipient__factory } from '@biconomy/common/dist/src/types'
+import { SampleRecipient, SampleRecipient__factory } from '@biconomy/common/src/types'
 import { ethers } from 'hardhat'
 import { ClientConfig, ERC4337EthersProvider, newProvider } from '../src'
 import { EntryPoint, EntryPoint__factory } from '@account-abstraction/contracts'
