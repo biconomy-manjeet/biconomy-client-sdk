@@ -1,0 +1,35 @@
+name: Build and Test PR Changes
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.14.2]
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Packages
+        run: |
+          npm install lerna -g
+          ./rebuild.sh
+          npx lerna clean -y
+
+      - name: Check Lint
+        run: |
+          npx lerna bootstrap
+          npm run lint --fix
+      
+      - name: Build Packages
+        run: |
+          npm run build
