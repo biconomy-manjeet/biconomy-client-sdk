@@ -33,9 +33,12 @@ jobs:
       - name: Build Packages
         run: |
           npm run build
-      - name: Add User
+      - name: Authenticate with Registry
         run: |
-          npm adduser
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 #add publish      
       - name: Publish Packages
         run: |
