@@ -29,11 +29,11 @@ jobs:
         run: |
           npm run lint:fix
         
-      
+   
       - name: Build Packages
         run: |
           npm run build
-      
+#add publish      
       - name: Publish Packages
         run: |
           npx lerna publish from-package
