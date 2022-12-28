@@ -1,6 +1,6 @@
 {
   "name": "@biconomy-sdk-dev/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "common utils to be used for aa transactions",
   "keywords": [
     "utils"
