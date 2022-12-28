@@ -1,6 +1,6 @@
 {
-  "name": "@biconomy/ethers-lib",
-  "version": "0.0.4",
+  "name": "@biconomy-sdk-dev/ethers-lib",
+  "version": "1.0.4",
   "description": "Ethers library adapter to be used by Biconomy SDK",
   "main": "./dist/src/index.js",
   "typings": "./dist/src/index.d.ts",
