@@ -12,6 +12,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+*.d.ts
 
 # nyc test coverage
 .nyc_output
